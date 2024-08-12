@@ -1,0 +1,12 @@
+﻿@model IEnumerable<PopularTag>
+
+<div class="widget-detail">
+    <ul>
+        @foreach (var popularTag in Model)
+        {
+            <li>
+                <a href="#">@popularTag.Title<span>(5)</span></a>
+            </li>
+        }
+    </ul>
+</div>
